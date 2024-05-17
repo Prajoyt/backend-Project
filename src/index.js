@@ -4,13 +4,24 @@
 
 import dotenv from 'dotenv';
 import connectDB from './db/index.js';
+import { app } from './app.js';
 
 dotenv.config({
     path:'./env'
 })
 
-connectDB();
-
+const port =process.env.PORT || 8000;
+ 
+//since coonect db is async function it will returns us promise
+connectDB()
+.then(()=>{
+    app.listen(port,()=>{
+        console.log(`Server is connected to the dand running on the port:${port}`);
+    })
+})
+.catch((err)=>{
+    console.log('ERROR IN MONGODB:connecting :'.err);
+})
 
 
 
