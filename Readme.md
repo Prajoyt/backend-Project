@@ -64,3 +64,15 @@ const asyncHnadler=(func)=>async(req,res,next)=>{
         })
     }
 } */
+
+Lecture 10
+Created user model and video model file 
+important thing is index in username should be used and it should not be used not every object should know about it.
+
+//jwt is bearer token
+
+userSchema.methods.generateAccessToken=function(){
+    jwt.sign({
+        _id:this._id  (these data is present in the mongodb not present inschema is ok)
+    })
+}
