@@ -8,6 +8,7 @@ const connectDB=async()=>{
    } catch (error) {
      console.log("ERROR IN MONGODB:",error);
      process.exit(1);
+     
    }
 }
 

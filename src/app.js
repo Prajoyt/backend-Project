@@ -17,4 +17,29 @@ app.use(express.urlencoded({extended:true,limit:'20kb'}));
 app.use(express.static('public'));
 
 app.use(cookieParser());
+
+//routes so there is always segregation now we will use route
+//routes import
+ import userRouter from "./routes/user.router.js";
+
+ //now to get route we will be using middleware so rather than using app.get we will use app.use
+ //route declaration
+
+ app.use('/api/v1/user',userRouter);
+
+//http://localhost:8000/api/v1/user/register
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export {app}
