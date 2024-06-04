@@ -16,7 +16,7 @@ const port =process.env.PORT || 8000;
 connectDB()
 .then(()=>{
     app.listen(port,()=>{
-        console.log(`Server is connected to the dand running on the port:${port}`);
+        console.log(`Server is connected to the and running on the port:${port} and link is http://localhost:8000`);
     })
 })
 .catch((err)=>{
