@@ -12,7 +12,7 @@ dotenv.config({
 
 const port =process.env.PORT || 8000;
  
-//since coonect db is async function it will returns us promise
+//since connect db is async function it will returns us promise
 connectDB()
 .then(()=>{
     app.listen(port,()=>{

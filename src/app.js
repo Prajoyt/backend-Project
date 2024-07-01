@@ -25,9 +25,9 @@ app.use(cookieParser());
  //now to get route we will be using middleware so rather than using app.get we will use app.use
  //route declaration
 
- app.use('/api/v1/user',userRouter);
+ app.use('/api/v1/users',userRouter);
 
-//http://localhost:8000/api/v1/user/register
+//http://localhost:8000/api/v1/users/register
 
 
 
