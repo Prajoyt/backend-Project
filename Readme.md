@@ -270,3 +270,24 @@ if (!createdUser) {
  check in utils for proper files
 49:44 Creating a new object with given status code and data
 51:33 Register controller and bug fixes
+
+
+Lecture 15
+00:03 Expect bugs in your code and debug it with attention
+01:59 Using Postman for backend testing and sharing collections
+06:03 Selecting and adding files in Postman for backend
+08:03 Debugging and issue checking is important in backend development.
+12:50 Using postman to upload and retrieve images in the backend
+14:45 Automatically remove uploaded files for testing purposes
+18:28 Issue of undefined property in JavaScript
+20:17 Check if the request.data files have come and whether it is properly an array or not
+23:58 Using Postman for backend development
+25:32 Using Postman to create and organize collections
+29:22 Using Postman for backend: Registering and sending requests very important required to check if placed 
+31:22 Using Postman for backend development allows for easy uploading and saving of files.
+35:15 Fix all the bugs in the register controller1
+
+
+
+access token is short lived  
+refresh token  is saved in db and we can request when we need them
